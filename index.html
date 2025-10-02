@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Vieira & Miranda Advocacia — Especialistas em Direito Trabalhista e Previdenciário." />
+    <title>Vieira & Miranda | Advocacia Trabalhista e Previdenciária</title>
+
+    <!-- SEO/OG básicos -->
+    <link rel="canonical" href="https://www.vmadvocacia.com.br/" />
+    <meta property="og:title" content="Vieira & Miranda | Advocacia Trabalhista e Previdenciária" />
+    <meta property="og:description" content="Atuação especializada na defesa de direitos de trabalhadores e segurados. Atendimento transparente, humanizado e focado em resultados." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.vmadvocacia.com.br/" />
+    <meta property="og:image" content="https://www.vmadvocacia.com.br/img/og-cover.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Favicon (substitua pelos seus arquivos) -->
+    <link rel="icon" href="/favicon.ico" />
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Gabarito -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              wine: '#500000', // vinho escuro
+              earth: '#A1665B', // terroso
+              light: '#f2f2f2', // claro
+            },
+            fontFamily: {
+              sans: ['Gabarito', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+              display: ['Gabarito', 'ui-serif', 'Georgia', 'serif'],
+            },
+          },
+        },
+      }
+    </script>
+
+    <!-- JSON-LD: organização (ajuste os dados reais) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "name": "Vieira & Miranda Advocacia",
+      "url": "https://www.vmadvocacia.com.br/",
+      "logo": "https://www.vmadvocacia.com.br/img/logo.png",
+      "areaServed": "BR",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rua Claudionor Regis, 596 - Forquilhinhas",
+        "addressLocality": "São José",
+        "addressRegion": "SC",
+        "postalCode": "00000-000",
+        "addressCountry": "BR"
+      },
+      "telephone": "+55-48-98868-4366",
+      "email": "contato@vmadvocacia.com.br",
+      "priceRange": "$$"
+    }
+    </script>
+  </head>
+
+  <body class="antialiased text-slate-800 bg-white font-sans">
+    <!-- Link de pular para conteúdo -->
+    <a href="#inicio" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[9999] focus:rounded-md focus:bg-earth focus:px-3 focus:py-2 focus:text-white">Ir para conteúdo</a>
+
+    <!-- Topbar -->
+    <div class="bg-wine text-light text-sm hidden md:block">
+      <div class="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
+        <p class="opacity-95">Atendimento em Direito Trabalhista e Previdenciário</p>
+        <div class="flex items-center gap-4">
+          <a href="mailto:contato@vmadvocacia.com.br" class="hover:underline">contato@vmadvocacia.com.br</a>
+          <a href="https://wa.me/5548988684366" class="hover:underline" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-slate-100">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="h-16 flex items-center justify-between">
+          <a href="#inicio" class="flex items-center gap-3" aria-label="Início">
+            <img src="img/logo-miranda-vieira-vertical.png" alt="Miranda &amp; Vieira Advocacia" class="h-10 w-auto" loading="lazy" />
+            <span class="sr-only">Miranda &amp; Vieira Advocacia</span>
+          </a>
+
+          <nav class="hidden md:flex items-center gap-6 text-sm" aria-label="Navegação principal">
+            <a href="#areas" class="hover:text-earth focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-earth/40 rounded">Áreas</a>
+            <a href="#diferenciais" class="hover:text-earth focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-earth/40 rounded">Diferenciais</a>
+            <a href="#equipe" class="hover:text-earth focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-earth/40 rounded">Equipe</a>
+            <a href="#sobre" class="hover:text-earth focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-earth/40 rounded">Sobre</a>
+            <a href="#contato" class="hover:text-earth focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-earth/40 rounded">Contato</a>
+            <a href="#contato" class="ml-2 inline-flex items-center rounded-md bg-earth text-white px-4 py-2 font-medium hover:opacity-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-earth/40">Agende uma consulta</a>
+          </nav>
+
+          <!-- Botão hambúrguer (mobile) -->
+          <button id="menu-toggle" type="button" aria-controls="mobile-menu" aria-expanded="false" class="md:hidden inline-flex items-center justify-center rounded-md p-2 text-slate-700 hover:text-earth hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-earth/40">
+            <span class="sr-only">Abrir menu</span>
+            <svg id="icon-open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M4 6h16v2H4V6Zm0 5h16v2H4v-2Zm0 5h16v2H4v-2Z"/></svg>
+            <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" viewBox="0 0 24 24" fill="currentColor"><path d="M6.225 4.811 4.811 6.225 10.586 12l-5.775 5.775 1.414 1.414L12 13.414l5.775 5.775 1.414-1.414L13.414 12l5.775-5.775-1.414-1.414L12 10.586 6.225 4.811Z"/></svg>
+          </button>
+        </div>
+
+        <!-- Menu móvel -->
+        <div id="mobile-menu" class="md:hidden hidden pb-4">
+          <div class="border-t border-slate-200 pt-4">
+            <nav class="flex flex-col gap-3 text-sm" aria-label="Navegação móvel">
+              <a data-mobile-link href="#areas" class="px-1 py-2 rounded hover:bg-slate-50">Áreas</a>
+              <a data-mobile-link href="#diferenciais" class="px-1 py-2 rounded hover:bg-slate-50">Diferenciais</a>
+              <a data-mobile-link href="#equipe" class="px-1 py-2 rounded hover:bg-slate-50">Equipe</a>
+              <a data-mobile-link href="#sobre" class="px-1 py-2 rounded hover:bg-slate-50">Sobre</a>
+              <a data-mobile-link href="#contato" class="px-1 py-2 rounded hover:bg-slate-50">Contato</a>
+              <a data-mobile-link href="#contato" class="mt-2 inline-flex items-center justify-center rounded-md bg-earth text-white px-4 py-2 font-medium hover:opacity-95">Agende uma consulta</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="inicio" class="scroll-mt-24">
+      <!-- Hero -->
+      <section class="relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-wine to-[#3b0000]" aria-hidden="true"></div>
+        <div class="relative max-w-7xl mx-auto px-4 py-20 md:py-28">
+          <div class="grid md:grid-cols-2 gap-10 items-center">
+            <div class="text-light">
+              <h1 class="font-display text-4xl md:text-5xl font-semibold leading-tight">Advocacia Trabalhista e Previdenciária com atenção e estratégia</h1>
+              <p class="mt-4 text-light/90 text-lg">Atuação especializada na defesa de direitos de trabalhadores e segurados. Atendimento transparente, humanizado e focado em resultados.</p>
+              <div class="mt-8 flex flex-wrap gap-3">
+                <a href="#contato" class="inline-flex items-center rounded-md bg-earth text-white px-6 py-3 font-medium hover:opacity-95">Falar com um advogado</a>
+                <a href="#areas" class="inline-flex items-center rounded-md bg-light text-wine px-6 py-3 font-medium hover:bg-white">Conheça nossas áreas</a>
+              </div>
+            </div>
+            <div class="rounded-xl ring-1 ring-white/10 overflow-hidden shadow-lg">
+              <video
+                src="img/animacao-logotipo-miranda-vieira.mp4"
+                class="w-full h-full object-cover aspect-[4/3]"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                poster="img/poster-video.jpg"
+                aria-label="Animação do logotipo do escritório"
+              >
+                Seu navegador não suporta a reprodução de vídeo.
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Áreas de Atuação -->
+      <section id="areas" class="bg-light scroll-mt-24">
+        <div class="max-w-7xl mx-auto px-4 py-16">
+          <h2 class="font-display text-3xl font-semibold text-wine">Áreas de Atuação</h2>
+          <p class="mt-2 text-slate-600">Atendimento completo em demandas trabalhistas e previdenciárias.</p>
+
+          <div class="mt-10 grid gap-6 sm:grid-cols-2">
+            <!-- Trabalhista -->
+            <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+              <div class="flex items-center gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-earth" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3a1 1 0 0 1 .894.553l7 14A1 1 0 0 1 19 19H5a1 1 0 0 1-.894-1.447l7-14A1 1 0 0 1 12 3Zm0 3.618L6.618 17h10.764L12 6.618ZM11 10h2v4h-2v-4Zm0 6h2v2h-2v-2Z"/></svg>
+                <h3 class="text-xl font-semibold">Direito Trabalhista</h3>
+              </div>
+              <p class="mt-3 text-slate-600">Defesa de direitos de empregados e ex-empregados em todas as fases da relação de trabalho.</p>
+              <ul class="mt-4 list-disc pl-6 text-slate-700 space-y-1">
+                <li>Rescisões, verbas devidas e multas</li>
+                <li>Horas extras, adicional noturno e intervalos</li>
+                <li>Assédio moral e danos materiais/morais</li>
+                <li>Acidentes de trabalho e estabilidade</li>
+              </ul>
+            </div>
+
+            <!-- Previdenciário -->
+            <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+              <div class="flex items-center gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-earth" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 1 10 10c0 6-5.5 9-10 10C7.5 21 2 18 2 12A10 10 0 0 1 12 2Zm0 2C7.582 4 4 7.582 4 12c0 3.905 3.057 6.166 8 7.23 4.943-1.064 8-3.325 8-7.23 0-4.418-3.582-8-8-8Zm0 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6Z"/></svg>
+                <h3 class="text-xl font-semibold">Direito Previdenciário</h3>
+              </div>
+              <p class="mt-3 text-slate-600">Planejamento e obtenção de benefícios do INSS, inclusive revisões e recursos.</p>
+              <ul class="mt-4 list-disc pl-6 text-slate-700 space-y-1">
+                <li>Aposentadorias e tempo de contribuição</li>
+                <li>Auxílio-doença, aposentadoria por invalidez</li>
+                <li>BPC/LOAS e pensão por morte</li>
+                <li>Revisões e recursos administrativos</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Diferenciais -->
+      <section id="diferenciais" class="bg-white scroll-mt-24">
+        <div class="max-w-7xl mx-auto px-4 py-16">
+          <h2 class="font-display text-3xl font-semibold text-wine">Por que escolher o nosso escritório</h2>
+          <div class="mt-8 grid gap-6 md:grid-cols-3">
+            <div class="rounded-lg border border-slate-200 p-6">
+              <div class="flex items-center gap-3">
+                <span class="h-2.5 w-2.5 rounded-full bg-earth"></span>
+                <h3 class="font-semibold">Atendimento humanizado</h3>
+              </div>
+              <p class="mt-2 text-slate-600">Comunicação clara, próxima e focada nas necessidades do cliente.</p>
+            </div>
+            <div class="rounded-lg border border-slate-200 p-6">
+              <div class="flex items-center gap-3">
+                <span class="h-2.5 w-2.5 rounded-full bg-earth"></span>
+                <h3 class="font-semibold">Estratégia e eficiência</h3>
+              </div>
+              <p class="mt-2 text-slate-600">Atuação técnica com foco em resultado e previsibilidade.</p>
+            </div>
+            <div class="rounded-lg border border-slate-200 p-6">
+              <div class="flex items-center gap-3">
+                <span class="h-2.5 w-2.5 rounded-full bg-earth"></span>
+                <h3 class="font-semibold">Transparência</h3>
+              </div>
+              <p class="mt-2 text-slate-600">Relatórios e atualização constante sobre o andamento do caso.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sobre -->
+      <section id="sobre" class="bg-light scroll-mt-24">
+        <div class="max-w-7xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
+          <div>
+            <h2 class="font-display text-3xl font-semibold text-wine">Sobre o escritório</h2>
+            <p class="mt-4 text-slate-700">O Vieira &amp; Miranda Advocacia é um escritório voltado à defesa dos direitos de trabalhadores e segurados, com atuação estratégica em processos judiciais e administrativos. Priorizamos a escuta ativa, a clareza das informações e a responsabilidade com cada caso.</p>
+            <p class="mt-3 text-slate-700">Aliamos experiência prática à atualização constante da legislação e jurisprudência, buscando o melhor resultado com ética e eficiência.</p>
+          </div>
+          <div class="relative">
+            <div class="aspect-[4/3] rounded-xl bg-white border border-slate-200 shadow-sm flex items-center justify-center">
+              <span class="text-slate-500">Espaço para imagem do escritório</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Equipe -->
+      <section id="equipe" class="bg-white scroll-mt-24">
+        <div class="max-w-7xl mx-auto px-4 py-16">
+          <h2 class="font-display text-3xl font-semibold text-wine">Nossa Equipe</h2>
+          <div class="mt-8 grid gap-6 sm:grid-cols-2">
+            <!-- Lucas -->
+            <div class="rounded-xl border border-slate-200 p-6 flex gap-5 items-center">
+              <div class="h-20 w-20 rounded-full bg-light border border-slate-200 flex items-center justify-center text-slate-400" aria-hidden="true">LV</div>
+              <div>
+                <h3 class="text-xl font-semibold">Lucas Augusto Vieira</h3>
+                <p class="text-earth font-medium">Advogado</p>
+                <p class="text-slate-500 text-sm">OAB/SC 51887</p>
+                <p class="mt-1 text-slate-600 text-sm">Especialista em Direito do Trabalho, com atuação em negociações, audiências e cálculos trabalhistas.</p>
+              </div>
+            </div>
+
+            <!-- Bianca -->
+            <div class="rounded-xl border border-slate-200 p-6 flex gap-5 items-center">
+              <div class="h-20 w-20 rounded-full bg-light border border-slate-200 flex items-center justify-center text-slate-400" aria-hidden="true">BM</div>
+              <div>
+                <h3 class="text-xl font-semibold">Bianca Miranda</h3>
+                <p class="text-earth font-medium">Advogada</p>
+                <p class="mt-1 text-slate-600 text-sm">Atuação em Direito Previdenciário, com foco em benefícios por incapacidade, revisões e planejamento.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Chamada -->
+      <section class="relative">
+        <div class="absolute inset-0 -z-10 bg-gradient-to-r from-wine via-[#640d0d] to-wine" aria-hidden="true"></div>
+        <div class="max-w-7xl mx-auto px-4 py-16 text-center text-light">
+          <h2 class="font-display text-3xl font-semibold">Pronto para começar?</h2>
+          <p class="mt-2 text-light/90">Conte seu caso e receba uma avaliação inicial.</p>
+          <a href="#contato" class="mt-6 inline-flex items-center rounded-md bg-earth text-white px-6 py-3 font-medium hover:opacity-95">Agendar atendimento</a>
+        </div>
+      </section>
+
+      <!-- Contato -->
+      <section id="contato" class="bg-white scroll-mt-24">
+        <div class="max-w-7xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10">
+          <div>
+            <h2 class="font-display text-3xl font-semibold text-wine">Entre em contato</h2>
+            <p class="mt-2 text-slate-600">Preencha o formulário ou fale direto pelo WhatsApp. Responderemos o mais breve possível.</p>
+
+            <!-- Dica: considere usar um serviço como Formspree / Netlify Forms para evitar mailto (melhor UX) -->
+            <form action="mailto:contato@vmadvocacia.com.br" method="post" enctype="text/plain" class="mt-6 space-y-4" novalidate>
+              <!-- Campo honeypot anti-spam (oculto para humanos) -->
+              <input type="text" name="website" class="hidden" tabindex="-1" autocomplete="off" />
+
+              <div>
+                <label for="nome" class="block text-sm font-medium text-slate-700">Nome</label>
+                <input id="nome" name="nome" type="text" required autocomplete="name" class="mt-1 w-full rounded-md border-slate-300 focus:border-earth focus:ring-earth" />
+              </div>
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="email" class="block text-sm font-medium text-slate-700">E-mail</label>
+                  <input id="email" name="email" type="email" required autocomplete="email" class="mt-1 w-full rounded-md border-slate-300 focus:border-earth focus:ring-earth" />
+                </div>
+                <div>
+                  <label for="telefone" class="block text-sm font-medium text-slate-700">Telefone</label>
+                  <input id="telefone" name="telefone" type="tel" inputmode="tel" autocomplete="tel" class="mt-1 w-full rounded-md border-slate-300 focus:border-earth focus:ring-earth" />
+                </div>
+              </div>
+              <div>
+                <label for="mensagem" class="block text-sm font-medium text-slate-700">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required class="mt-1 w-full rounded-md border-slate-300 focus:border-earth focus:ring-earth"></textarea>
+              </div>
+              <div class="flex items-center gap-3">
+                <button type="submit" class="inline-flex items-center rounded-md bg-earth text-white px-6 py-3 font-medium hover:opacity-95">Enviar</button>
+                <a href="https://wa.me/5548988684366?text=Olá%2C%20gostaria%20de%20falar%20com%20um%20advogado(a)." target="_blank" rel="noopener" class="inline-flex items-center rounded-md border border-earth text-earth px-6 py-3 font-medium hover:bg-earth/5">WhatsApp</a>
+              </div>
+            </form>
+          </div>
+
+          <div class="rounded-xl bg-light p-6 border border-slate-200">
+            <h3 class="text-lg font-semibold text-wine">Informações</h3>
+            <ul class="mt-4 space-y-2 text-slate-700">
+              <li><strong>E-mail:</strong> <a href="mailto:contato@vmadvocacia.com.br" class="underline decoration-earth/30 hover:decoration-earth">contato@vmadvocacia.com.br</a></li>
+              <li><strong>Telefone:</strong> <a href="tel:+5548988684366" class="hover:underline">(48) 98868-4366</a></li>
+              <li><strong>WhatsApp:</strong> <a href="https://wa.me/5548988684366" target="_blank" rel="noopener" class="hover:underline">(48) 98868-4366</a></li>
+              <li><strong>Endereço:</strong> Rua Claudionor Regis, 596 — Forquilhinhas — São José/SC</li>
+              <li class="text-sm text-slate-500">Atendimento presencial e online.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-wine text-light">
+      <div class="max-w-7xl mx-auto px-4 py-10">
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+          <div>
+            <p class="text-lg font-semibold">Vieira &amp; Miranda Advocacia</p>
+            <p class="text-light/80 text-sm">Direito Trabalhista e Previdenciário</p>
+          </div>
+          <nav class="flex gap-5 text-sm" aria-label="Rodapé">
+            <a href="#areas" class="hover:underline">Áreas</a>
+            <a href="#equipe" class="hover:underline">Equipe</a>
+            <a href="#sobre" class="hover:underline">Sobre</a>
+            <a href="#contato" class="hover:underline">Contato</a>
+          </nav>
+        </div>
+        <div class="mt-8 border-t border-white/10 pt-6 text-xs text-light/80">&copy; <span id="ano"></span> Vieira &amp; Miranda. Todos os direitos reservados.</div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+      // Ano do rodapé
+      document.getElementById('ano').textContent = new Date().getFullYear();
+
+      // Menu móvel acessível
+      (function () {
+        const toggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const iconOpen = document.getElementById('icon-open');
+        const iconClose = document.getElementById('icon-close');
+
+        function setOpen(isOpen) {
+          mobileMenu.classList.toggle('hidden', !isOpen);
+          iconOpen.classList.toggle('hidden', isOpen);
+          iconClose.classList.toggle('hidden', !isOpen);
+          toggle.setAttribute('aria-expanded', String(isOpen));
+        }
+
+        toggle?.addEventListener('click', () => setOpen(mobileMenu.classList.contains('hidden')));
+
+        // Fechar ao clicar em links do menu
+        document.querySelectorAll('[data-mobile-link]').forEach((el) => {
+          el.addEventListener('click', () => setOpen(false));
+        });
+
+        // Fechar com ESC
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape') setOpen(false);
+        });
+
+        // Fechar clicando fora
+        document.addEventListener('click', (e) => {
+          if (!mobileMenu.contains(e.target) && !toggle.contains(e.target)) {
+            setOpen(false);
+          }
+        });
+      })();
+
+      // Validação simples para evitar abrir mailto sem campos
+      (function () {
+        const form = document.querySelector('form[action^="mailto:"]');
+        if (!form) return;
+        form.addEventListener('submit', (e) => {
+          const nome = form.querySelector('#nome');
+          const email = form.querySelector('#email');
+          const mensagem = form.querySelector('#mensagem');
+          const honeypot = form.querySelector('input[name="website"]');
+
+          if (honeypot && honeypot.value) {
+            e.preventDefault(); // provável bot
+            return;
+          }
+
+          if (!nome.value.trim() || !email.value.trim() || !mensagem.value.trim()) {
+            e.preventDefault();
+            alert('Por favor, preencha nome, e-mail e mensagem.');
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>
