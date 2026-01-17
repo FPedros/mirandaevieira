@@ -3,28 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Miranda & Vieira Advocacia — Especialistas em Direito Trabalhista e Previdenciário." />
-    <meta name="robots" content="index, follow" />
+    <meta name="description" content="Advocacia trabalhista e previdenciária em São José/SC. Rescisões, horas extras e benefícios do INSS. Atendimento presencial e online." />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="author" content="Miranda & Vieira Advocacia" />
+    <meta name="theme-color" content="#500000" />
     <link rel="alternate" hreflang="pt-BR" href="https://www.vmadvocacia.com.br/" />
-    <title>Miranda & Vieira | Advocacia Trabalhista e Previdenciária</title>
+    <link rel="alternate" hreflang="x-default" href="https://www.vmadvocacia.com.br/" />
+    <title>Miranda & Vieira Advocacia Trabalhista e Previdenciária em São José/SC</title>
 
     <!-- SEO/OG básicos -->
     <link rel="canonical" href="https://www.vmadvocacia.com.br/" />
-    <meta property="og:title" content="Miranda & Vieira | Advocacia Trabalhista e Previdenciária" />
-    <meta property="og:description" content="Atuação especializada na defesa de direitos de trabalhadores e segurados. Atendimento transparente, humanizado e focado em resultados." />
+    <link rel="sitemap" type="application/xml" href="https://www.vmadvocacia.com.br/sitemap.xml" />
+    <meta property="og:site_name" content="Miranda & Vieira Advocacia" />
+    <meta property="og:title" content="Miranda & Vieira Advocacia Trabalhista e Previdenciária em São José/SC" />
+    <meta property="og:description" content="Advocacia trabalhista e previdenciária em São José/SC. Rescisões, horas extras e benefícios do INSS. Atendimento presencial e online." />
     <meta property="og:locale" content="pt_BR" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.vmadvocacia.com.br/" />
-    <meta property="og:image" content="https://www.vmadvocacia.com.br/img/og-cover.jpg" />
+    <meta property="og:image" content="https://www.vmadvocacia.com.br/img/imagem_escritorio.webp" />
+    <meta property="og:image:alt" content="Miranda & Vieira Advocacia em São José/SC" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Miranda & Vieira | Advocacia Trabalhista e Previdenciária" />
-    <meta name="twitter:description" content="Atuação especializada na defesa de direitos de trabalhadores e segurados. Atendimento transparente, humanizado e focado em resultados." />
+    <meta name="twitter:title" content="Miranda & Vieira Advocacia Trabalhista e Previdenciária em São José/SC" />
+    <meta name="twitter:description" content="Advocacia trabalhista e previdenciária em São José/SC. Rescisões, horas extras e benefícios do INSS. Atendimento presencial e online." />
+    <meta name="twitter:image" content="https://www.vmadvocacia.com.br/img/imagem_escritorio.webp" />
+    <meta name="twitter:image:alt" content="Miranda & Vieira Advocacia em São José/SC" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
 
     <!-- Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        ad_storage: 'denied',
+        analytics_storage: 'denied'
+      });
+    </script>
 
     <!-- Google Fonts: Gabarito -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,35 +66,98 @@
       }
     </script>
 
-        <!-- JSON-LD: organização (ajuste os dados reais) -->
+    <!-- JSON-LD: organização (ajuste os dados reais) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LegalService",
-      "name": "Miranda & Vieira Advocacia",
-      "legalName": "Miranda & Vieira Advocacia",
-      "url": "https://www.vmadvocacia.com.br/",
-      "logo": "https://www.vmadvocacia.com.br/img/logo.png",
-      "image": "https://www.vmadvocacia.com.br/img/og-cover.jpg",
-      "areaServed": "BR",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Rua Claudionor Regis, 596 - Forquilhinhas",
-        "addressLocality": "São José",
-        "addressRegion": "SC",
-        "postalCode": "88107-170",
-        "addressCountry": "BR"
-      },
-      "telephone": "+55-48-98868-4366",
-      "priceRange": "$",
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": -27.609,
-        "longitude": -48.645
-      },
-      "hasMap": "https://maps.google.com/?q=Rua+Claudionor+Regis,+596,+São+José,+SC",
-      "sameAs": [
-        "https://wa.me/5548988684366"
+      "@graph": [
+        {
+          "@type": "LegalService",
+          "@id": "https://www.vmadvocacia.com.br/#legalservice",
+          "name": "Miranda & Vieira Advocacia",
+          "legalName": "Miranda & Vieira Advocacia",
+          "url": "https://www.vmadvocacia.com.br/",
+          "logo": "https://www.vmadvocacia.com.br/img/logo%20mirandaevireia.png",
+          "image": "https://www.vmadvocacia.com.br/img/imagem_escritorio.webp",
+          "description": "Advocacia trabalhista e previdenciária em São José/SC. Rescisões, horas extras e benefícios do INSS. Atendimento presencial e online.",
+          "telephone": "+55-48-98868-4366",
+          "priceRange": "$",
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "São José"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Santa Catarina"
+            },
+            {
+              "@type": "Country",
+              "name": "Brasil"
+            }
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Rua Claudionor Regis, 596 - Forquilhinhas",
+            "addressLocality": "São José",
+            "addressRegion": "SC",
+            "postalCode": "88107-170",
+            "addressCountry": "BR"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -27.609,
+            "longitude": -48.645
+          },
+          "hasMap": "https://maps.google.com/?q=Rua+Claudionor+Regis,+596,+Sao+Jose,+SC",
+          "serviceType": [
+            "Direito Trabalhista",
+            "Direito Previdenciário"
+          ],
+          "contactPoint": [
+            {
+              "@type": "ContactPoint",
+              "telephone": "+55-48-98868-4366",
+              "contactType": "customer service",
+              "areaServed": "BR",
+              "availableLanguage": [
+                "pt-BR"
+              ]
+            }
+          ],
+          "sameAs": [
+            "https://wa.me/5548988684366"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.vmadvocacia.com.br/#website",
+          "url": "https://www.vmadvocacia.com.br/",
+          "name": "Miranda & Vieira Advocacia",
+          "description": "Advocacia trabalhista e previdenciária em São José/SC. Atendimento presencial e online.",
+          "inLanguage": "pt-BR",
+          "publisher": {
+            "@id": "https://www.vmadvocacia.com.br/#legalservice"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.vmadvocacia.com.br/#webpage",
+          "url": "https://www.vmadvocacia.com.br/",
+          "name": "Miranda & Vieira Advocacia Trabalhista e Previdenciária em São José/SC",
+          "description": "Advocacia trabalhista e previdenciária em São José/SC. Rescisões, horas extras e benefícios do INSS. Atendimento presencial e online.",
+          "inLanguage": "pt-BR",
+          "isPartOf": {
+            "@id": "https://www.vmadvocacia.com.br/#website"
+          },
+          "about": {
+            "@id": "https://www.vmadvocacia.com.br/#legalservice"
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://www.vmadvocacia.com.br/img/imagem_escritorio.webp"
+          }
+        }
       ]
     }
     </script>
@@ -86,6 +166,8 @@
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
+      "@id": "https://www.vmadvocacia.com.br/#faq",
+      "inLanguage": "pt-BR",
       "mainEntity": [
         {"@type": "Question", "name": "Quais áreas o escritório atende?", "acceptedAnswer": {"@type": "Answer", "text": "Atuamos em Direito Trabalhista e Previdenciário, incluindo rescisões, horas extras, assédio moral, benefícios do INSS e revisões."}},
         {"@type": "Question", "name": "Vocês atendem de forma online?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. Atendemos presencialmente em São José/SC e também de forma online pelo WhatsApp e videochamada."}},
@@ -174,7 +256,7 @@
                 loop
                 playsinline
                 preload="metadata"
-                poster="img/poster-video.jpg"
+                poster="img/imagem_escritorio.webp"
                 aria-label="Animação do logotipo do escritório"
               >
                 Seu navegador não suporta a reprodução de vídeo.
@@ -401,21 +483,49 @@
     <!-- Footer -->
     <footer class="bg-wine text-light">
       <div class="max-w-7xl mx-auto px-4 py-10">
-        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+        <div class="flex flex-col items-start text-left sm:flex-row sm:items-center sm:justify-between gap-6">
           <div>
             <p class="text-lg font-semibold">Miranda &amp; Vieira Advocacia</p>
             <p class="text-light/80 text-sm">Direito Trabalhista e Previdenciário</p>
           </div>
-          <nav class="flex gap-5 text-sm" aria-label="Rodapé">
+          <nav class="flex flex-wrap gap-5 text-sm" aria-label="Rodapé">
             <a href="#areas" class="hover:underline">Áreas</a>
             <a href="#equipe" class="hover:underline">Equipe</a>
             <a href="#sobre" class="hover:underline">Sobre</a>
             <a href="#contato" class="hover:underline">Contato</a>
           </nav>
         </div>
-        <div class="mt-8 border-t border-white/10 pt-6 text-xs text-light/80">&copy; <span id="ano"></span> Miranda &amp; Vieira. Todos os direitos reservados.</div>
+        <div class="mt-8 border-t border-white/10 pt-6 text-xs text-light/80 flex flex-col items-center gap-2 text-center sm:flex-row sm:items-center sm:justify-between sm:text-left">
+          <span class="sm:mx-auto">&copy; <span id="ano"></span> Miranda &amp; Vieira. Todos os direitos reservados.</span>
+          <span>Desenvolvido pela <a href="https://www.indexatech.com.br/" class="hover:underline" target="_blank" rel="noopener">IndexaTech</a></span>
+        </div>
       </div>
     </footer>
+
+    <!-- LGPD Cookie Banner -->
+    <div
+      id="cookie-banner"
+      class="fixed inset-x-0 bottom-0 z-[9999] hidden border-t border-white/10 bg-wine/95 text-light backdrop-blur"
+      role="dialog"
+      aria-live="polite"
+      aria-label="Aviso de cookies"
+    >
+      <div class="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-4 text-sm md:flex-row md:items-center md:justify-between">
+        <p class="text-light/90">
+          Usamos cookies para melhorar sua experiência e analisar o uso do site, em conformidade com a LGPD.
+          Ao continuar, você concorda com o uso de cookies.
+        </p>
+        <div class="flex flex-wrap items-center gap-3">
+          <button
+            id="cookie-accept"
+            type="button"
+            class="inline-flex items-center justify-center rounded-md bg-earth px-4 py-2 font-medium text-white hover:opacity-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-earth/40"
+          >
+            Aceitar
+          </button>
+        </div>
+      </div>
+    </div>
 
     <!-- Scripts -->
     <script>
@@ -468,6 +578,45 @@
           if (!mobileMenu.contains(e.target) && !toggle.contains(e.target)) {
             setOpen(false);
           }
+        });
+      })();
+
+      // LGPD cookie banner + Analytics consent
+      (function () {
+        const banner = document.getElementById('cookie-banner');
+        const acceptButton = document.getElementById('cookie-accept');
+        const storageKey = 'mv_cookie_consent';
+        const gtagId = 'G-RE8X4LQYFM';
+
+        function loadGtag() {
+          if (window.gtagLoaded) return;
+          window.gtagLoaded = true;
+
+          const script = document.createElement('script');
+          script.async = true;
+          script.src = `https://www.googletagmanager.com/gtag/js?id=${gtagId}`;
+          document.head.appendChild(script);
+
+          gtag('consent', 'update', {
+            ad_storage: 'denied',
+            analytics_storage: 'granted'
+          });
+          gtag('js', new Date());
+          gtag('config', gtagId);
+        }
+
+        if (!banner || !acceptButton) return;
+
+        if (!localStorage.getItem(storageKey)) {
+          banner.classList.remove('hidden');
+        } else {
+          loadGtag();
+        }
+
+        acceptButton.addEventListener('click', () => {
+          localStorage.setItem(storageKey, 'accepted');
+          banner.classList.add('hidden');
+          loadGtag();
         });
       })();
     </script>
